@@ -3,53 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Data Analyst Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
 </head>
 <body>
+
     <header>
+        <h1>My Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="#about">About Me</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="hero">
-            <h1>Hi, I'm Your Name</h1>
-            <p>Data Analyst & Business Analyst</p>
-        </div>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Brief introduction about your background, experience, and skills in data analysis and business analysis.</p>
+        <p>Hi, I'm [Your Name]. A passionate developer...</p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Company Name</h3>
+                <p>Role: [Job Title]</p>
+                <p>Description of what you did.</p>
+            </div>
+        </div>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project-grid">
-            <!-- Repeat this block for each project -->
-            <div class="project-card">
-                <h3>Project Title</h3>
-                <p>Short description of the project, the tools used, and the outcomes achieved.</p>
-                <a href="project-link.html" class="btn">View Details</a>
-            </div>
-            <!-- End of project block -->
+        <div class="project">
+            <img src="images/project1.jpg" alt="Project 1">
+            <h3>Project Title</h3>
+            <p>Short description of the project.</p>
+            <a href="#">View Project</a>
         </div>
     </section>
 
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+
     <section id="contact">
-        <h2>Contact</h2>
-        <p>If you'd like to discuss potential opportunities or collaborations, feel free to reach out!</p>
-        <a href="mailto:your.email@example.com" class="btn">Email Me</a>
+        <h2>Contact Me</h2>
+        <form method="POST" action="https://formspree.io/your-email@example.com">
+            <input type="email" name="_replyto" placeholder="Your email" required>
+            <textarea name="message" placeholder="Your message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
 
     <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <p>&copy; 2025 Your Name</p>
     </footer>
+
 </body>
 </html>
